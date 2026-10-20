@@ -2,10 +2,12 @@
 
 A modern, mobile-first responsive landing page built as part of the **FEDS Academy – Web Development Week 2** assignment.
 
-## 🚀 Live Landing page e[View Live Site](https://github.com/shawndaniels2027-rgb/orbit-landing-project-/)  
+## 🚀 Live Demo
 
+[View Live Site](https://shawndaniels2027-rgb.github.io/orbit-landing-project-/)
 
-## Features
+## ✨ Features
+
 - Flexbox navbar
 - Hero section with call-to-action button
 - Features section with 3 cards using CSS Grid
@@ -28,11 +30,13 @@ A modern, mobile-first responsive landing page built as part of the **FEDS Acade
 > - `desktop.png` (laptop/desktop screenshot)
 
 ## 🛠️ Technologies Used
+
 - HTML5
 - CSS3 (Flexbox + Grid)
 - Mobile-first responsive design
 
 ## 📂 Project Structure## 📝 Assignment Requirements Met
+
 - [x] Navbar built with Flexbox
 - [x] Hero section with heading + CTA button
 - [x] Features section with at least 3 cards in Grid
@@ -42,5 +46,5 @@ A modern, mobile-first responsive landing page built as part of the **FEDS Acade
 
 ---
 
-**Built by:** [Joshua]  
+**Built by:** Joshua  
 **Course:** FEDS Academy – Web Development (Week 2)
