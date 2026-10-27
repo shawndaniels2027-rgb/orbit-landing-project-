@@ -464,3 +464,48 @@ body.dark-mode {
   color: inherit;
   cursor: pointer;
 }
+/* FIX DARK MODE TEXT AND BACKGROUNDS */
+
+body.dark-mode .header,
+body.dark-mode .navbar,
+body.dark-mode .features,
+body.dark-mode .about,
+body.dark-mode .footer {
+  background-color: #101827;
+  color: #f1f5f9;
+}
+
+body.dark-mode .features h2,
+body.dark-mode .features h3,
+body.dark-mode .features p,
+body.dark-mode .about h2,
+body.dark-mode .about p,
+body.dark-mode .footer p,
+body.dark-mode .footer a {
+  color: #f1f5f9;
+}
+
+body.dark-mode .feature-card {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border-color: #334155;
+}
+
+body.dark-mode .feature-card h3,
+body.dark-mode .feature-card p {
+  color: #f1f5f9;
+}
+
+body.dark-mode .hero {
+  background: #101827;
+  color: #f1f5f9;
+}
+
+body.dark-mode .hero h1,
+body.dark-mode .hero p {
+  color: #f1f5f9;
+}
+
+body.dark-mode .contact {
+  color: #ffffff;
+}
