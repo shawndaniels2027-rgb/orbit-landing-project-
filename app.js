@@ -130,5 +130,20 @@ if (contactForm) {
     document.getElementById(fieldName).classList.add("invalid");
   }
 }
+  // ===== FAQ ACCORDION =====
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach((question) => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+    const isExpanded = question.getAttribute("aria-expanded") === "true";
+
+    question.setAttribute("aria-expanded", String(!isExpanded));
+    answer.hidden = isExpanded;
+
+    const icon = question.querySelector(".faq-icon");
+    icon.textContent = isExpanded ? "+" : "−";
+  });
+});
   console.log("Orbit JavaScript loaded successfully!");
 });
