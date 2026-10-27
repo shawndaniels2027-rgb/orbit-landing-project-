@@ -26,7 +26,7 @@ This project was built as part of the FEDS Academy Web Development program (Week
 ## How to Run
 
 1. Clone this repository
-2. Open `index.html` in your browser
+2. Open `https://shawndaniels2027-rgb.github.io/orbit-landing-project-/` in your browser
 
 ## Author
 
