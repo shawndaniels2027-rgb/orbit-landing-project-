@@ -593,3 +593,75 @@ h3 {
     animation-duration: 0.01ms !important;
   }
 }
+/* =========================================
+   CONTACT FORM VALIDATION
+========================================= */
+
+#contact-form {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 1rem;
+
+  border: 2px solid transparent;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #17213b;
+
+  font: inherit;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #c4b5fd;
+}
+
+.form-group input.invalid,
+.form-group textarea.invalid {
+  border-color: #fecaca;
+}
+
+.error-message {
+  display: block;
+  margin-top: 0.35rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+#form-status {
+  margin-top: 1rem;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+#form-status.success {
+  color: #dcfce7;
+}
+
+#form-status.failure {
+  color: #fee2e2;
+}
