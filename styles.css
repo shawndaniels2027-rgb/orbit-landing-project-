@@ -509,3 +509,32 @@ body.dark-mode .hero p {
 body.dark-mode .contact {
   color: #ffffff;
 }
+/* FIX MOBILE NAVIGATION */
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--page-bg, #ffffff);
+    color: var(--text-color, #17213b);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    color: var(--text-color, #17213b);
+  }
+}
