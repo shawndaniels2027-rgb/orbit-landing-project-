@@ -538,3 +538,13 @@ body.dark-mode .contact {
     color: var(--text-color, #17213b);
   }
 }
+/* Fix mobile navigation visibility */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
