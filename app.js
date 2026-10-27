@@ -26,6 +26,34 @@ document.addEventListener("DOMContentLoaded", () => {
       menuToggle.setAttribute("aria-label", "Open navigation menu");
     });
   });
+// ===== LIGHT AND DARK MODE =====
 
+const themeToggle = document.getElementById("theme-toggle");
+
+// Restore the saved theme
+const savedTheme = localStorage.getItem("orbit-theme");
+
+if (savedTheme === "dark") {
+  document.body.classList.add("dark-mode");
+  themeToggle.textContent = "☀️";
+  themeToggle.setAttribute("aria-label", "Switch to light mode");
+}
+
+// Switch themes when the button is clicked
+themeToggle.addEventListener("click", () => {
+  const isDark = document.body.classList.toggle("dark-mode");
+
+  themeToggle.textContent = isDark ? "☀️" : "🌙";
+
+  themeToggle.setAttribute(
+    "aria-label",
+    isDark ? "Switch to light mode" : "Switch to dark mode"
+  );
+
+  localStorage.setItem(
+    "orbit-theme",
+    isDark ? "dark" : "light"
+  );
+});
   console.log("Orbit JavaScript loaded successfully!");
 });
