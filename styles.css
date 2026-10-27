@@ -434,3 +434,33 @@ h1, h2, h3 {
     color: #17213b;
   }
 }
+/* ===== LIGHT AND DARK MODE ===== */
+
+body {
+  --page-bg: #ffffff;
+  --text-color: #17213b;
+  --card-bg: #f5f5f5;
+
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.feature-card {
+  background-color: var(--card-bg);
+}
+
+body.dark-mode {
+  --page-bg: #101827;
+  --text-color: #f1f5f9;
+  --card-bg: #1e293b;
+}
+
+.theme-toggle {
+  padding: 8px 12px;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
